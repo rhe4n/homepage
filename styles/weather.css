@@ -1,0 +1,17 @@
+.icon {
+    float: center;
+    width: 10%;
+    height: auto;
+}
+
+.divsplay {
+    margin: 2em;
+}
+
+input {
+    padding: 0.5em;
+  }
+  
+  div {
+    margin-top: 1.5em;
+  }
