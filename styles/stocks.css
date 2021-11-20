@@ -1,17 +1,22 @@
-.icon {
-    float: center;
-    width: 10%;
-    height: auto;
+.flex-container-horizontal {
+  display:inline-flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 4em;
 }
 
-.divsplay {
-    margin: 2em;
+#stocksDisplay {
+  order:1;
+  flex-grow: 6;
+  /*background-color: cyan;*/
 }
 
-input {
-    padding: 0.5em;
-  }
-  
-  div {
-    margin-top: 1.5em;
-  }
+aside {
+  order:2;
+  flex-grow: 0;
+  /*background-color: cyan;*/
+}
+
+
