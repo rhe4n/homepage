@@ -1,16 +1,16 @@
 <!DOCTYPE html>
 <html lang="es">
     <head>
-        <title>Weather</title>
+        <title>Precio luz</title>
         <meta charset="UTF-8" />
         <meta name="author" content="Juan Torrente" />
         <meta name="keywords" content="Javascript" />
         <meta name ="viewport" content ="width=device-width, initial scale=1.0" />
-        <link rel="stylesheet" href="styles/main.css">
-        <link rel="stylesheet" href="styles/weather.css">
+        <link rel="stylesheet" href="../styles/main.css">
+        <link rel="stylesheet" href="../styles/applets.css">
         <script src="http://code.jquery.com/jquery-3.6.0.min.js"></script>
-        <script src="scripts/main.js"></script>
-        <script src="scripts/weather.js"></script>
+        <script src="../scripts/main.js"></script>
+        <script src="../scripts/applets.js"></script>
     </head>
     <body onload="hp.onLoad()">
         <header>
@@ -21,19 +21,16 @@
                 time
             </h2>
             <nav>
-                <a href="index.html">Home</a>
-                <a href="weather.html">Weather</a>
-                <a href="stocks.html">Stocks</a>
-                <a href="applets.html">Applets</a>
+                <a href="../index.html">Home</a>
+                <a href="../weather.html">Weather</a>
+                <a href="../stocks.html">Stocks</a>
+                <a href="../applets.html">Applets</a>
             </nav>
         </header>       
 
         <section>
-            <h2>Weather</h2>
-            <input id="cityField" type="text">
-            <input type="button" value="Submit" onclick="mf.load()">
-
-            <div id="weatherDisplay">
+            <h2>Luz</h2>
+            <div id="luzDisplay">
 
             </div>
         </section>        
