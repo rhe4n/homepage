@@ -7,10 +7,11 @@
         <meta name="keywords" content="Javascript" />
         <meta name="description" content="Ejercicio 8" />
         <meta name ="viewport" content ="width=device-width, initial scale=1.0" />
-        <link rel="stylesheet" href="styles/main.css">
-        <link rel="stylesheet" href="styles/stocks.css">
+        <link rel="stylesheet" href="../styles/main.css">
+        <link rel="stylesheet" href="styles/applets.css">
         <script src="http://code.jquery.com/jquery-3.6.0.min.js"></script>
-        <script src="scripts/main.js"></script>
+        <script src="../scripts/main.js"></script>
+        <script src="../scripts/applets.js"></script>
         <script src="scripts/stocks.js"></script>
     </head>
     <body onload="hp.onLoad()">
@@ -21,12 +22,9 @@
             <h2 class="time">
                 time
             </h2>
-            <nav>
-                <a href="index.html">Home</a>
-                <a href="weather.html">Weather</a>
-                <a href="stocks.html">Stocks</a>
-                <a href="applets.html">Applets</a>
-            </nav>
+            <script>
+                loadAppletsNav();
+            </script>
         </header>       
 
         <h2>Stocks</h2>

@@ -110,7 +110,4 @@ class EthBtc {
     }
 }
 
-window.addEventListener("load",function(event) {
-    new CryptoChecker().updateAside();
-},false);
-
+window.addEventListener("onload", new CryptoChecker().updateAside());

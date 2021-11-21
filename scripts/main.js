@@ -17,4 +17,8 @@ class HomePage {
     }    
 }
 
+function loadNav() {
+    document.write("<nav><a href=\"index.html\">Home</a><a href=\"weather.html\">Weather</a><a href=\"applets.html\">Applets</a><a href=\"todo.html\">ToDo</a></nav>");
+}
+
 var hp = new HomePage();

@@ -6,7 +6,9 @@
         <meta name="author" content="Juan Torrente">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="styles/main.css">
+        <link rel="stylesheet" href="styles/frontpage.css">
         <script src="scripts/main.js"></script>
+        <script src="scripts/frontpage.js"></script>
         <script src="http://code.jquery.com/jquery-3.6.0.min.js"></script>
     </head>
     <body onload="hp.onLoad()">
@@ -17,14 +19,41 @@
             <h2 class="time">
                 time
             </h2>
-            <nav>
-                <a href="index.html">Home</a>
-                <a href="weather.html">Weather</a>
-                <a href="stocks.html">Stocks</a>
-                <a href="applets.html">Applets</a>
-            </nav>
+            <script>
+                loadNav();
+            </script>
         </header>        
-        <section></section>
+        <section id="homeGrid">
+            <div>
+                <a id="gridChild" href="https://campusvirtual.uniovi.es" target="_blank">
+                    <img src="resources/media/uo_color.png" alt="uniovi" width="125">
+                </a>
+            </div>
+            <div>
+                <a id="gridChild" href="https://youtube.com" target="_blank">
+                    <img src="resources/media/yt_red.png" alt="youtube" width="100">
+                </a>
+            </div>
+            <div>
+                <a id="gridChild" href="https://youtube.com" target="_blank">
+                    <img src="resources/media/yt_red.png" alt="youtube" width="100">
+                </a></div>
+            <div>
+                <a id="gridChild" href="index.html" target="_blank">
+                    <img src="https://via.placeholder.com/75" alt="placeholder" width="75" height="75">
+                </a>
+            </div>  
+            <div>
+                <a id="gridChild" href="index.html" target="_blank">
+                    <img src="https://via.placeholder.com/75" alt="placeholder" width="75" height="75">
+                </a>
+            </div>  
+            <div>
+                <a id="gridChild" href="index.html" target="_blank">
+                    <img src="https://via.placeholder.com/75" alt="placeholder" width="75" height="75">
+                </a>
+            </div>            
+        </section>
         <footer></footer>
     </body>
 </html>

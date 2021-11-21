@@ -9,7 +9,7 @@ body {
   
     margin-left:auto;
     margin-right: auto;
-    width: 72em;
+    width: 60em;
 }
 
 header {
@@ -34,7 +34,9 @@ h2 {
 
 /*Especificidad: 001*/
 nav {
-  align-self: center;
+  display:flex;
+  flex-direction: row;
+  justify-content: space-between;
   padding: 2em;
 }
 
@@ -57,11 +59,6 @@ nav a:hover {
 footer {
   padding-top: 3em;
   text-align: right;
-}
-
-/*Especificidad: 002*/
-section img {
-  float: right;  
 }
 
 /*Especificidad: 002*/

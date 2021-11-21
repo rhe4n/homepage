@@ -1,0 +1,19 @@
+#homeGrid {
+    align-self: center;
+
+    display: grid;
+    width: 30em;
+    gap: 3em;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+
+    align-items: center;
+    justify-items: center;
+}
+
+#gridChild {
+    place-self: center;
+
+    width:5em;
+    height:5em;
+}
