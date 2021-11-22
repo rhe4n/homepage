@@ -1,37 +1,45 @@
 "use strict"
 class PrecioLuz {
     //https://apidatos.ree.es/es/datos/mercados/precios-mercados-tiempo-real?start_date=2021-11-20T00:00&end_date=2021-11-20T23:59&time_trunc=hour
-    constructor() {
-        this.url = "https://apidatos.ree.es/es/datos/mercados/precios-mercados-tiempo-real?"
-        
-        this.setStartDate();
-        this.setEndDate();
-        this.setTrunc();
+    constructor() {        
+        this.date = new Date();
     }
 
-    setStartDate() {
-        var today = new Date();
+    reloadUrl() {
+        this.url = "https://apidatos.ree.es/es/datos/mercados/precios-mercados-tiempo-real?";
+
         var str = "start_date=";
-        str += today.getFullYear() + "-" + today.getMonth() + "-" + today.getDay();
+        str += this.date.getFullYear() + "-" + putZeroBefore(this.date.getMonth()+1) + "-" + putZeroBefore(this.date.getDate());
         str += "T00:00&";
-
         this.url += str;
-    }
 
-    setEndDate() {
-        var today = new Date();
-        var str = "end_date=";
-        str += today.getFullYear() + "-" + today.getMonth() + "-" + today.getDay();
-        str += "T23:59&";
 
-        this.url += str;
-    }
+        var str2 = "end_date=";
+        str2 += this.date.getFullYear() + "-" + putZeroBefore(this.date.getMonth()+1) + "-" + putZeroBefore(this.date.getDate());
+        str2 += "T23:59&";
+        this.url += str2;
 
-    setTrunc() {
         this.url += "time_trunc=hour";
     }
 
+    yesterday() {
+        this.date.setDate(this.date.getDate() - 1);
+        this.reloadUrl();
+        this.cargarDatos();
+        console.log("fecha:" + this.date.toLocaleString());
+    }
+
+    tomorrow() {
+        this.date.setDate(this.date.getDate() + 1);
+        this.reloadUrl();
+        this.cargarDatos();
+        console.log("fecha:" + this.date.toLocaleString());
+    }
+
     cargarDatos() {
+        this.reloadUrl();
+        this.updateFecha();
+
         console.log(this.url);
 
         $.ajax({
@@ -47,14 +55,11 @@ class PrecioLuz {
 
     mostrarDatos(data) {
         var valores = data.included[0].attributes.values;
-        console.log(valores);
-
 
         var lowest = getLowestIndex(valores);
-
         var strDatos = "";
         for (var i = 0; i < 24; i++) {
-            var hora = (i < 10 ? "0"+i : i) + ":00";
+            var hora = putZeroBefore(i) + ":00";
 
             if (i == lowest) {
                 strDatos += "<li id=\"lowestPrice\">" + hora + ": " + valores[i].value + " €/MWh</li>";
@@ -62,6 +67,7 @@ class PrecioLuz {
                 strDatos += "<li>" + hora + ": " + valores[i].value + " €/MWh</li>";
             }            
         }
+        strDatos += "<li>Fecha: " + valores[0].datetime.substring(0,10) + "</li>";
 
         var elemento = document.createElement("ul");
         elemento.setAttribute("id", "list_hourly_price");
@@ -70,13 +76,22 @@ class PrecioLuz {
         var where = $("#luzDisplay");
         where.empty();
         where.append(elemento);
+        
+        
     }
 
-    run() {
-        this.cargarDatos();
+    updateFecha() {
+        var str = this.date.getFullYear() + "-" + putZeroBefore(this.date.getMonth()+1) + "-" + putZeroBefore(this.date.getDate());
+        console.log(str);
+
+        console.log("spinner: " + putZeroBefore(this.date.getDate()) + "/" + putZeroBefore(this.date.getMonth()));
+        $("#dateDisplay").text(str);    
     }
 }
 
+function putZeroBefore(i) {
+    return (i < 10 ? "0"+i : i);
+}
 
 function getLowestIndex(arr) {
     var lowest = 0;
@@ -93,4 +108,4 @@ function getLowestIndex(arr) {
 
 
 var pl = new PrecioLuz();
-window.addEventListener("onload", pl.run());
+window.addEventListener("onload", pl.cargarDatos());

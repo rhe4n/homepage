@@ -17,3 +17,7 @@
     width:5em;
     height:5em;
 }
+
+footer div {
+    float:right;
+}

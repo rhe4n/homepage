@@ -24,13 +24,17 @@
             <script>
                 loadAppletsNav();
             </script>
-        </header>       
-
+        </header>   
+        <h2>Pricing</h2>
+        <section class="flex-container-horizontal-short">            
+            <input type="button" value="<" onclick="pl.yesterday()"/>
+            <div id="dateDisplay"></div>
+            <input type="button" value=">" onclick="pl.tomorrow()"/>
+        </section>
         <section>
-            <h2>Pricing</h2>
             <div id="luzDisplay">
 
-            </div>
-        </section>        
+            </div>  
+        </section>
     </body>
 </html>
