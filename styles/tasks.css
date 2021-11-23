@@ -1,0 +1,22 @@
+.flex-container-vertical {
+    display:inline-flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    gap: 1em;
+  }
+
+/*Especificidad: 002*/
+.taskHoverable {
+    cursor: pointer;
+    background-color: #e5e9f0;
+    color: #3b4252;
+    padding: 1em;
+    text-decoration: none;
+    font-weight: bold;
+}
+  
+/*Especificidad: 012*/
+.taskHoverable:hover {
+    color: #e5e9f0;
+    background-color: #434c5e;
+}
