@@ -55,16 +55,12 @@ class Meteo {
     
 }
 
-function preventEnterReload() {
-    var input = $("#cityField")    
-        .on("keydown", function(event) {
-        if (event.keyCode == 13) {
-            console.log("helo");
-            event.preventDefault();
-            document.getElementById("myBtn").click();
-        }
-    });
-}
-
 var mf = new MeteoFactory();
-preventEnterReload();
+var input = document.getElementById("cityField");
+input.addEventListener("keyup", function(event) {
+  if (event.keyCode === 13) {
+    event.preventDefault();
+    mf.load();
+    //document.getElementById("enter").click();
+  }
+}); 
