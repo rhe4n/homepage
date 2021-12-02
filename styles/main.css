@@ -61,10 +61,3 @@ footer {
   text-align: right;
 }
 
-/*Especificidad: 002*/
-section video {
-  display: block;
-  margin-left: auto;
-  margin-right: auto; 
-}
-

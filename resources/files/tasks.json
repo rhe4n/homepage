@@ -1,10 +1,12 @@
 {
     "tasks" : [
         {
-            "text" : "lorem ipsum dolor sit amet"
+            "id": "id1",
+            "content" : "content1"
         },
         {
-            "text" : "ipsum  lorem amet dolor sit"
+            "id" : "id2",
+            "content" : "content2"
         }
     ]
 }

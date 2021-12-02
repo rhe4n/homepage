@@ -7,9 +7,9 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="styles/main.css">
         <link rel="stylesheet" href="styles/tasks.css">
-        <script src="scripts/main.js"></script>
-        <script src="scripts/tasks.js"></script>
+        
         <script src="http://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script src="scripts/main.js"></script>
     </head>
     <body onload="hp.onLoad()">
         <header>
@@ -22,9 +22,13 @@
             <script>
                 loadNav();
             </script>
-        </header>        
+        </header>
+        <input id="taskInput" type="text" autocomplete='off'>
         <section id="taskPanel" class="flex-container-vertical">
 
         </section>
+
+        
+        <script src="scripts/tasks.js"></script>
     </body>
 </html>
