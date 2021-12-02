@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Calculadora RPN</title>
+        <meta charset="UTF-8" />
+        <meta name="author" content="Juan Torrente" />
+        <meta name="keywords" content="Javascript" />
+        <meta name="description" content="Calculadora" />
+        <meta name ="viewport" content ="width=device-width, initial scale=1.0" />
+        <link rel="stylesheet" href="styles/rpnCalc.css"/>
+        <link rel="stylesheet" href="../styles/main.css">
+        <link rel="stylesheet" href="styles/applets.css">        
+        <script src="http://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script src="../scripts/main.js"></script>
+        <script src="../scripts/applets.js"></script>
+        <script src="scripts/rpnCalc.js"></script>
+    </head>
+    <body onload="hp.onLoad()" onkeypress="c.eventoTeclaPulsada(event)">
+        <header>
+            <h1 class="date">
+                date
+            </h1>
+            <h2 class="time">
+                time
+            </h2>
+            <script>
+                loadAppletsNav();
+            </script>
+        </header>
+        <section id="calculator">
+            <form>
+
+                <section id="screen">
+                    <ul>
+                    </ul>
+                </section>                
+
+                <input type="text" id="buffer" disabled>
+
+                <input type="button" value="arcSin" onclick="c.arcSin()"/>
+                <input type="button" value="arcCos" onclick="c.arcCos()"/>
+                <input type="button" value="arcTan" onclick="c.arcTan()"/>
+                <input type="button" value="del" onclick="c.delete()"/>
+
+                <input type="button" value="sin" onclick="c.sin()"/>
+                <input type="button" value="cos" onclick="c.cos()"/>
+                <input type="button" value="tan" onclick="c.tan()"/>
+                <input type="button" value="/" onclick="c.division()"/>
+
+                <input type="button" value="7" onclick="c.digitos(7)"/>
+                <input type="button" value="8" onclick="c.digitos(8)"/>
+                <input type="button" value="9" onclick="c.digitos(9)"/>
+                <input type="button" value="*" onclick="c.multiplicacion()"/>
+
+                <input type="button" value="4" onclick="c.digitos(4)"/>
+                <input type="button" value="5" onclick="c.digitos(5)"/>
+                <input type="button" value="6" onclick="c.digitos(6)"/>
+                <input type="button" value="-" onclick="c.resta()"/>
+
+                <input type="button" value="1" onclick="c.digitos(1)"/>
+                <input type="button" value="2" onclick="c.digitos(2)"/>
+                <input type="button" value="3" onclick="c.digitos(3)"/>
+                <input type="button" value="+" onclick="c.suma()"/>
+
+                <input type="button" value="0" onclick="c.digitos(0)"/>
+                <input type="button" value="." onclick="c.punto()"/>
+                <input type="button" value="C" onclick="c.reset()"/>
+                <input type="button" value="&#60;-" onclick="c.enter()"/>
+
+            </form>
+        </section>
+    </body>
+</html>

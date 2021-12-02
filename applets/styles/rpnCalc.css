@@ -1,0 +1,91 @@
+/*Especificidad: 001*/
+body {
+    font-family: Helvetica, sans-serif;
+    background-color: #e5e9f0;
+    color: #4c566a;
+  
+    display:flex;
+    flex-direction: column;
+  
+    margin-left:auto;
+    margin-right: auto;
+    width: 48em;
+  }
+
+  #calculator {
+      align-self: center;
+      width:29em;
+
+  }
+
+
+/*Especificidad: 002*/
+section form {
+    display: grid;
+    gap: 0.5em;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto auto auto auto auto auto auto auto auto;
+    max-width: 20em;
+    background-color:lightgray;
+    color:black;
+    border-style: solid;
+
+    padding: 1em;
+    margin: 1em;
+}
+
+/*Especificidad: 002*/
+form input {
+    width: auto;
+    height: 4em;
+}
+
+/*Especificidad: 012*/
+form input[type="text"]{
+    grid-column: 1 / span 4;
+    height:fit-content;
+    text-align: right;
+}
+
+/*Especificidad: 005*/
+#screen ul{
+    width: auto;
+    
+    background-color:lightsteelblue;
+    color:black;
+
+    text-align: right;
+}
+
+#screen ul li {
+    display: block;
+    border-style: solid;
+    border-width: 1px;
+}
+
+/*Especificidad: 004*/
+#screen {
+    grid-column: 1 / span 4;
+    height: auto;
+    min-height: 13em;
+    background-color:lightsteelblue;
+    color:black;
+
+    border-style: solid;
+}
+
+/*Especificidad: 006*/
+body section form section ul li {
+    width: auto;
+    color: black;
+    background-color:lightsteelblue;
+    list-style-type: none;
+    padding: 0.3em;
+
+    text-align: right;
+}
+
+/*Especificidad: 011*/
+input[type="submit"] {
+    grid-column: 1 / span 4;
+}
