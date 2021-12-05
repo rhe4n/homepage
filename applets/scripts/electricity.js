@@ -55,29 +55,36 @@ class PrecioLuz {
 
     mostrarDatos(data) {
         var valores = data.included[0].attributes.values;
+        var t1 = perc33(valores);
+        var t2 = perc66(valores);
+        var lowestIndex = getLowestIndex(valores);
 
-        var lowest = getLowestIndex(valores);
-        var strDatos = "";
-        for (var i = 0; i < 24; i++) {
-            var hora = putZeroBefore(i) + ":00";
-
-            if (i == lowest) {
-                strDatos += "<li id=\"lowestPrice\">" + hora + ": " + valores[i].value + " €/MWh</li>";
-            } else {
-                strDatos += "<li>" + hora + ": " + valores[i].value + " €/MWh</li>";
-            }            
-        }
-        strDatos += "<li>Fecha: " + valores[0].datetime.substring(0,10) + "</li>";
-
-        var elemento = document.createElement("ul");
-        elemento.setAttribute("id", "list_hourly_price");
-        elemento.innerHTML = strDatos;
-
+        var ul = document.createElement("ul");
+        ul.setAttribute("id", "list_hourly_price");
         var where = $("#luzDisplay");
         where.empty();
-        where.append(elemento);
-        
-        
+        where.append(ul);
+
+        var li;
+        for (var i = 0; i < 24; i++) {
+            var hora = putZeroBefore(i) + ":00";
+            
+            li = document.createElement("li");
+            if (i==lowestIndex) {
+                li.setAttribute("id", "lowestPrice");
+            }
+
+            if (valores[i].value < t1) {
+                li.setAttribute("class", "lowerThird");
+            } else if (valores[i].value < t2) {
+                li.setAttribute("class", "middleThird")
+            } else {
+                li.setAttribute("class", "highestThird")
+            }
+
+            li.innerText = hora +": " + valores[i].value + " €/MWh";
+            ul.append(li);
+        }
     }
 
     updateFecha() {
@@ -104,6 +111,41 @@ function getLowestIndex(arr) {
     }
 
     return lowest;
+}
+
+function perc33(arr) {
+    var flag = -1;
+
+    var values = new Array();
+    arr.forEach(element => {
+        values.push(element.value);
+    });
+
+    values.sort(function(a, b) {
+        return a - b;
+    });
+
+    
+    console.log(values);
+    console.log("perc 33 = " + values[(values.length/3)])
+    return values[values.length/3];
+}
+
+function perc66(arr) {
+    var flag = -1;
+
+    var values = new Array();
+    arr.forEach(element => {
+        values.push(element.value);
+    });
+
+    values.sort(function(a, b) {
+        return a - b;
+    });
+
+    console.log(values);
+    console.log("perc 66 = " + values[(values.length/3)*2])
+    return values[(values.length/3)*2];
 }
 
 

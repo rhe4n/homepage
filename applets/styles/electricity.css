@@ -1,0 +1,17 @@
+@import url("../../styles/nord.css");
+
+.lowerThird {
+    background-color: var(--nord14);
+}
+
+.middleThird {
+    background-color: var(--nord13);
+}
+
+.highestThird {
+    background-color: var(--nord11);
+}
+
+#lowestPrice {
+    font-weight: bold;
+  }

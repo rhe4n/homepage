@@ -21,11 +21,6 @@ li {
   padding: 0.6em;
 }
 
-#lowestPrice {
-  background-color:#11cc33;
-  color: rgb(0, 0, 0);
-}
-
 .flex-container-horizontal {
   display:inline-flex;
   flex-direction: row;
