@@ -1,8 +1,10 @@
+@import "nord.css";
+
 /*Especificidad: 001*/
 body {
     font-family: Helvetica, sans-serif;
-    background-color: rgb(229, 233, 240);
-    color: rgb(76, 86, 106);
+    background-color: var(--nord5);
+    color: var(--nord3);
   
     display:flex;
     flex-direction: column;
@@ -21,15 +23,13 @@ header {
 h1 {
   text-align: left;
   font-size: 2.2em;
-  background-color: #e5e9f0;
-  color: rgb(46, 52, 64); /*#2e3440*/
+  color: var(--nord0); /*#2e3440*/
   padding-top: 1em;
 }
 
 /*Especificidad: 001*/
 h2 {
-  background-color: #e5e9f0;
-  color: #3b4252; 
+  color: var(--nord1); 
 }
 
 /*Especificidad: 001*/
@@ -42,8 +42,8 @@ nav {
 
 /*Especificidad: 002*/
 nav a {
-  background-color: #e5e9f0;
-  color: #3b4252;
+  background-color: var(--nord5);
+  color: var(--nord1);
   padding: 1em;
   text-decoration: none;
   font-weight: bold;
@@ -59,5 +59,15 @@ nav a:hover {
 footer {
   padding-top: 3em;
   text-align: right;
+}
+
+#darkModeToggle {
+  margin-top: 10em;
+  width: 5em;
+}
+
+.darkMode {
+  background-color: var(--nord0);
+  color: var(--nord5);
 }
 
