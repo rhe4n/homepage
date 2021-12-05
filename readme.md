@@ -1,0 +1,1 @@
+light mode logos: 2e3440, nord0
