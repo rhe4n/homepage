@@ -7,7 +7,7 @@
     <div style="background-color:#2e3440; width=60; height=60"></div>
     Styleguide Nord - Polar Night
     */
-    --nord0: #2e3440;
+    --nord0: #2e3440; /*rgb(46, 52, 64)*/
   
     /*
     Lighter shade color of the base component color.
@@ -16,7 +16,7 @@
     <div style="background-color:#3b4252; width=60; height=60"></div>
     Styleguide Nord - Polar Night
     */
-    --nord1: #3b4252;
+    --nord1: #3b4252; /*rgb(59, 66, 82)*/
   
     /*
     Lighter shade color of the base component color.
@@ -26,7 +26,7 @@
     <div style="background-color:#434c5e; width=60; height=60"></div>
     Styleguide Nord - Polar Night
     */
-    --nord2: #434c5e;
+    --nord2: #434c5e; /*rgb(67, 76, 94)*/
   
     /*
     Lighter shade color of the base component color.
@@ -36,7 +36,7 @@
     <div style="background-color:#4c566a; width=60; height=60"></div>
     Styleguide Nord - Polar Night
     */
-    --nord3: #4c566a;
+    --nord3: #4c566a; /*rgb(76, 86, 106)*/
   
     /*
     Base component color of "Snow Storm".
@@ -46,7 +46,7 @@
     <div style="background-color:#d8dee9; width=60; height=60"></div>
     Styleguide Nord - Snow Storm
     */
-    --nord4: #d8dee9;
+    --nord4: #d8dee9; /*rgb(216, 222, 233)*/
   
     /*
     Lighter shade color of the base component color.
@@ -56,7 +56,7 @@
     <div style="background-color:#e5e9f0; width=60; height=60"></div>
     Styleguide Nord - Snow Storm
     */
-    --nord5: #e5e9f0;
+    --nord5: #e5e9f0; /*rgb(229, 233, 240)*/
   
     /*
     Lighter shade color of the base component color.
@@ -66,7 +66,7 @@
     <div style="background-color:#eceff4; width=60; height=60"></div>
     Styleguide Nord - Snow Storm
     */
-    --nord6: #eceff4;
+    --nord6: #eceff4; /*rgb(236, 239, 244)*/
   
     /*
     Bluish core color.
@@ -75,7 +75,7 @@
     <div style="background-color:#8fbcbb; width=60; height=60"></div>
     Styleguide Nord - Frost
     */
-    --nord7: #8fbcbb;
+    --nord7: #8fbcbb; /*rgb(143, 188, 187)*/
   
     /*
     Bluish core accent color.
@@ -88,7 +88,7 @@
     <div style="background-color:#88c0d0; width=60; height=60"></div>
     Styleguide Nord - Frost
     */
-    --nord8: #88c0d0;
+    --nord8: #88c0d0; /*rgb(136, 192, 208)*/
   
     /*
     Bluish core color.
@@ -98,7 +98,7 @@
     <div style="background-color:#81a1c1; width=60; height=60"></div>
     Styleguide Nord - Frost
     */
-    --nord9: #81a1c1;
+    --nord9: #81a1c1; /*rgb(129, 161, 193)*/
   
     /*
     Bluish core color.
@@ -107,7 +107,7 @@
     <div style="background-color:#5e81ac; width=60; height=60"></div>
     Styleguide Nord - Frost
     */
-    --nord10: #5e81ac;
+    --nord10: #5e81ac; /*rgb(94, 129, 172)*/
   
     /*
     Colorful component color.
@@ -116,7 +116,7 @@
     <div style="background-color:#bf616a; width=60; height=60"></div>
     Styleguide Nord - Aurora
     */
-    --nord11: #bf616a;
+    --nord11: #bf616a; /*rgb(191, 97, 106)*/
   
     /*
     Colorful component color.
@@ -125,7 +125,7 @@
     <div style="background-color:#d08770; width=60; height=60"></div>
     Styleguide Nord - Aurora
     */
-    --nord12: #d08770;
+    --nord12: #d08770; /*rgb(208, 135, 112)*/
   
     /*
     Colorful component color.
@@ -135,7 +135,7 @@
     <div style="background-color:#ebcb8b; width=60; height=60"></div>
     Styleguide Nord - Aurora
     */
-    --nord13: #ebcb8b;
+    --nord13: #ebcb8b; /*rgb(235, 203, 139)*/
   
     /*
     Colorful component color.
@@ -145,7 +145,7 @@
     <div style="background-color:#a3be8c; width=60; height=60"></div>
     Styleguide Nord - Aurora
     */
-    --nord14: #a3be8c;
+    --nord14: #a3be8c; /*rgb(163, 190, 140)*/
   
     /*
     Colorful component color.
@@ -154,5 +154,11 @@
     <div style="background-color:#b48ead; width=60; height=60"></div>
     Styleguide Nord - Aurora
     */
-    --nord15: #b48ead;
+    --nord15: #b48ead; /*rgb(180, 142, 173)*/
+
+
+
+
+
+    --nord_pink: #c88bae; /*rgb(200, 139, 174)*/
   }
