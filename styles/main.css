@@ -1,10 +1,10 @@
-@import "nord.css";
+@import "colors.css";
 
 /*Especificidad: 001*/
 body {
     font-family: Helvetica, sans-serif;
-    background-color: var(--nord5);
-    color: var(--nord3);
+    background-color: var(--tokyo_black4);
+    color: var(--nord4);
   
     display:flex;
     flex-direction: column;
@@ -23,13 +23,13 @@ header {
 h1 {
   text-align: left;
   font-size: 2.2em;
-  color: var(--nord0); /*#2e3440*/
+  color: var(--nord4); /*#2e3440*/
   padding-top: 1em;
 }
 
 /*Especificidad: 001*/
 h2 {
-  color: var(--nord1); 
+  color: var(--nord5); 
 }
 
 /*Especificidad: 001*/
@@ -42,32 +42,30 @@ nav {
 
 /*Especificidad: 002*/
 nav a {
-  background-color: var(--nord5);
-  color: var(--nord1);
-  padding: 1em;
+  background-color: var(--tokyo_black4);
+  color: var(--tokyo_black2);
+  padding: 1em ;
   text-decoration: none;
   font-weight: bold;
+
+  text-align: center;
+  align-self: center;
+  justify-self: center;
 }
 
 /*Especificidad: 012*/
 nav a:hover {
-  color: #e5e9f0;
-  background-color: #434c5e;
+  color: var(--tokyo_black3);
 }
 
-/*Especificidad: 001*/
-footer {
-  padding-top: 3em;
-  text-align: right;
+#homenav {
+  color: var(--tokyo_orange);
 }
 
-#darkModeToggle {
-  margin-top: 10em;
-  width: 5em;
+#tasksnav {
+  color: var(--nord_pink);
 }
 
-.darkMode {
-  background-color: var(--nord0);
-  color: var(--nord5);
+#appletsnav {
+  color: var(--tokyo_blue1);
 }
-

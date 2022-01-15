@@ -1,17 +1,25 @@
 @import url("../../styles/nord.css");
 
 .lowerThird {
-    background-color: var(--nord14);
+    border-style: solid;
+    border-color: var(--tokyo_green);
 }
 
 .middleThird {
-    background-color: var(--nord13);
+    border-style: solid;
+    border-color: var(--tokyo_yellow);
 }
 
 .highestThird {
-    background-color: var(--nord11);
+    border-style: solid;
+    border-color: var(--tokyo_red);
 }
 
 #lowestPrice {
     font-weight: bold;
+    border-style: dashed;
   }
+
+li {
+    margin: 0.3em;
+}

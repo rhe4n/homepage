@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Weather</title>
+        <meta charset="UTF-8" />
+        <meta name="author" content="Juan Torrente" />
+        <meta name="keywords" content="Javascript" />
+        <meta name ="viewport" content ="width=device-width, initial scale=1.0" />
+        <link rel="stylesheet" href="styles/main.css">
+        <link rel="stylesheet" href="styles/weather.css">
+        <script src="http://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script src="scripts/main.js"></script>
+    </head>
+    <body onload="hp.onLoad()">
+        <header>
+            <h1 class="date">
+                date
+            </h1>
+            <h2 class="time">
+                time
+            </h2>
+            <script>
+                loadNav();
+            </script>
+        </header>       
+
+        <section>
+            <h2>Weather</h2>
+            <input id="cityField" type="text" autocomplete="off">
+            <input type="button" value="Submit" onclick="mf.load()">
+
+            <div id="weatherDisplay">
+
+            </div>
+        </section>
+        
+        
+        <script src="scripts/weather.js"></script>
+    </body>
+</html>

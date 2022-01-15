@@ -1,0 +1,73 @@
+
+:root {
+
+    --nord0: #2e3440; /*rgb(46, 52, 64)*/
+  
+    --nord1: #3b4252; /*rgb(59, 66, 82)*/
+
+    --nord2: #434c5e; /*rgb(67, 76, 94)*/
+
+    --nord3: #4c566a; /*rgb(76, 86, 106)*/
+
+    --nord4: #d8dee9; /*rgb(216, 222, 233)*/
+  
+    --nord5: #e5e9f0; /*rgb(229, 233, 240)*/
+
+    --nord6: #eceff4; /*rgb(236, 239, 244)*/
+  
+    --nord7: #8fbcbb; /*rgb(143, 188, 187)*/
+  
+    --nord8: #88c0d0; /*rgb(136, 192, 208)*/
+  
+    --nord9: #81a1c1; /*rgb(129, 161, 193)*/
+  
+    --nord10: #5e81ac; /*rgb(94, 129, 172)*/
+  
+    --nord11: #bf616a; /*rgb(191, 97, 106)*/
+  
+    --nord12: #d08770; /*rgb(208, 135, 112)*/
+  
+    --nord13: #ebcb8b; /*rgb(235, 203, 139)*/
+  
+    --nord14: #a3be8c; /*rgb(163, 190, 140)*/
+  
+    --nord15: #b48ead; /*rgb(180, 142, 173)*/
+
+    --nord_pink: #c88bae; /*rgb(200, 139, 174)*/
+
+    --tokyo_red: #f7768e;
+
+    --tokyo_orange: #ff9e64;
+
+    --tokyo_yellow: #e0af68;
+
+    --tokyo_green: #9ece6a;
+
+    --tokyo_blue1: #73daca;
+
+    --tokyo_blue2: #b4f9f8;
+
+    --tokyo_blue3: #2ac3de;
+
+    --tokyo_blue4: #7dcfff;
+
+    --tokyo_blue5: #7aa2f7;
+
+    --tokyo_violet: #bb9af7;
+
+    --tokyo_indigo1: #c0caf5;
+
+    --tokyo_indigo2: #a9b1d6;
+
+    --tokyo_indigo3: #9aa5ce;
+
+    --tokyo_white: #cfc9c2;
+
+    --tokyo_black1: #565f89;
+
+    --tokyo_black2: #414868;
+
+    --tokyo_black3: #24283b;
+
+    --tokyo_black4: #1a1b26;
+  }

@@ -73,6 +73,8 @@ function removeHTMLElement(element) {
     console.log("removed " + element.getAttribute("id"));
     element.remove();
     console.log(tasks);
+
+    saveTasks();
 }
 
 function saveTasks() {

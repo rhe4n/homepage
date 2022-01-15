@@ -8,8 +8,8 @@
 /*Especificidad: 002*/
 .taskHoverable {
     cursor: pointer;
-    background-color: #e5e9f0;
-    color: #3b4252;
+    background-color: var(--tokyo_black3);
+    color: var(--tokyo_indigo3);
     padding: 1em;
     text-decoration: none;
     font-weight: bold;
@@ -27,6 +27,7 @@
     margin: 1em;
     margin-bottom: 3em;
 
+    background-color: var(--tokyo_indigo3);
     border-color: #3b4252;
     border-style: solid;
     border-width: 1px;

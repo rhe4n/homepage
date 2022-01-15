@@ -18,7 +18,7 @@ class HomePage {
 }
 
 function loadNav() {
-    document.write("<nav><a href=\"index.html\">Home</a><a href=\"weather.html\">Weather</a><a href=\"applets.html\">Applets</a><a href=\"tasks.html\">Tasks</a></nav>");
+    document.write("<nav><a href=\"index.html\" id=\"homenav\">Home</a><a href=\"applets.html\" id=\"appletsnav\">Applets</a><a href=\"tasks.html\" id=\"tasksnav\">Tasks</a></nav>");
 }
 
 function darkMode(checkbox) {
